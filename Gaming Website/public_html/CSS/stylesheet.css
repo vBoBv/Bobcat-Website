@@ -1,0 +1,773 @@
+body {
+  margin: 0;
+  padding: 0;
+ font-family: 'Rajdhani', sans-serif;
+}
+
+.nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+/* Header */
+
+.logo {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	
+}
+
+.logoborder	{
+	border: 5px solid white;
+	width: 160px;
+	height: 40px;
+	position: absolute;
+	top: 18px;
+	left: 24px;
+}
+
+.navfont {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 15px;
+}
+ 
+.nav ul{
+	position: relative;
+  list-style: none;
+  background-color: black;
+  opacity: 0.8;
+  text-align: center;
+  padding: 15px 0 20px 0;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #C0C0C0;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  color: white;
+}
+ 
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+.nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+ /* Search Button */
+ 
+.search {
+	position: fixed;
+	top: 25px;
+	left: 1370px;
+}
+
+.search1 {
+	background-color: inherit; 
+	border: none; 
+	color: #C0C0C0;
+	cursor: pointer;
+}
+
+.search1:hover {
+	color: white;
+}
+
+/* Color of search when type */
+
+.search3 {
+	background-color: inherit;
+	border: none;
+	font-size: 40px;
+	
+}
+
+/* Off-canvas Menu */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* Section2 */
+	
+.section2 {
+	width: 100%;
+	background-color: black;
+	height: 800px;
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+}
+	
+/* Slideshow */
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 80px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  left: 1%;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* Black background to color the slideshows from up until the dots */
+.box1 {
+	background-color: black;
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	top: 790px;
+	left: 645px;
+	z-index: -10;
+	border-radius: 13px;
+}
+	
+/* Text over images */
+.textimage {
+	position: relative;
+	width: 100%;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  left: 1.2%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 90%;
+  height: 100px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+  padding: 50px;
+  padding-top: 0;
+  
+  
+}
+
+.textimage:hover .overlay {
+  opacity: 1;
+}
+
+/* Section3 */
+
+.section3 {
+	position: absolute;
+	top: 900px;
+	left: 0;
+	z-index: -1;
+	
+}
+
+#title {
+	position: absolute;
+	top: 840px;
+	left: 30px;
+	font-size: 20px;
+	z-index: -1;
+}
+
+.fortniteline1 {
+	width: 1170px;
+	height: 10px;
+	position: absolute;
+	top: 875px;
+	left: 240px;
+	background-color: #000033;
+	opacity:0.8;
+	z-index: -1;
+}
+
+.fortniteline2 {
+	width: 240px;
+	height: 10px;
+	position: absolute;
+	top: 850px;
+	left: 0px;
+	background-color: #000033;
+	opacity:0.8;
+	z-index: -1;
+}
+
+.fortniteline3 {
+	width: 10px;
+	height: 25.5px;
+	position: absolute;
+	top: 850px;
+	left: 240px;
+	background-color: #000033;
+	opacity:0.8;
+	z-index: -1;
+}
+
+
+.fortnite {
+	width: 800px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.content3 {
+	width: 510px;
+	height: 350px;
+	position: absolute;
+	top: 900px;
+	left: 800px;
+	text-align: justify;
+	background-color: white;	
+	color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	padding: 50px;
+	background-image: url("http://ak8.picdn.net/shutterstock/videos/11818658/thumb/1.jpg");
+	z-index: -1;
+	color: white;
+}
+
+/* Fortnite Animated Button */
+
+.button1 {
+  border-radius: 20px;
+  border: none;
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* Section 4 */
+
+#title1 {
+	opacity: 0.8;
+	position: absolute;
+	top: 1400px;
+	left: 30px;
+	font-size: 25px;
+	z-index: -1;
+}
+
+.titleline1 {
+	width: 1410px;
+	height: 10px;
+	position: absolute;
+	top: 1415px;
+	left: 0px;
+	background-color: #000033;
+	opacity:0.8;
+	z-index: -1;
+}
+
+.titleline2 {
+	width: 1150px;
+	height: 10px;
+	position: absolute;
+	top: 1430px;
+	left: 260px;
+	background-color: #000033;
+	opacity:0.8;
+	z-index: -1;
+}
+
+.titleline3 {
+	width: 1150px;
+	height: 10px;
+	position: absolute;
+	top: 1445px;
+	left: 260px;
+	background-color: #000033;
+	opacity:0.8;
+	z-index: -1;
+}
+
+.titleline4 {
+	width: 20px;
+	height: 10px;
+	position: absolute;
+	top: 1430px;
+	left: 0;
+	background-color: #000033;
+	opacity:0.8;
+	z-index: -1;
+}
+
+.titleline5 {
+	width: 20px;
+	height: 10px;
+	position: absolute;
+	top: 1445px;
+	left: 0;
+	background-color: #000033;
+	opacity:0.8;
+	z-index: -1;
+}
+
+.section4 {
+	position: absolute;
+	top: 1500px;
+	left: 150px;
+	z-index: -1;
+	
+}
+
+.leagueoflegends {
+	width: 500px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.content4 {
+	position: absolute;
+	text-align: justify;
+	background-color: white;
+	color: black;
+	top: 270px;
+	left: -40px;
+	z-index: -1;
+	width: 100%;
+	height: 330px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	padding: 20px;
+	z-index: -1;
+	background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/background-geometric-black-9.jpg");
+	color: white;
+}
+
+/* League of Legends Animated Button */
+
+.buttonlol {
+  border-radius: 20px;
+  border: none;
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+
+.buttonlol:hover {
+  opacity: 0.8;
+}
+
+
+/* Read More Animated Button */
+
+
+.button2 {
+  border: none;
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 80%;
+  left: 70%;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* Section 5 */
+
+.section5 {
+	position: absolute;
+	top: 1500px;
+	left: 750px;
+	z-index: -1;
+	
+}
+
+.csgo {
+	width: 500px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.content5 {
+	position: absolute;
+	text-align: justify;
+	background-color: white;
+	color: white;
+	top: 270px;
+	left: 1px;
+	z-index: -1;
+	width: 100%;
+	height: 330px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	padding: 20px;
+	z-index: -1;
+	background-image: url("http://sfwallpaper.com/images/gray-abstract-wallpaper-29.jpg");
+	
+}
+
+/* CS:GO Animated Button */
+
+.buttoncs {
+  border-radius: 20px;
+  border: none;
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+
+.buttoncs:hover {
+  opacity: 0.8;
+}
+
+/* Read More Animated Button */
+
+
+.button3 {
+  border: none;
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 25px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* Footer */
+
+.footer {
+	width: 100%;
+	background-color: black;
+	opacity: 0.8;
+	position: absolute;
+	top: 2200px;
+	height: 400px;
+	
+}
+
+.left {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	text-align: justify;
+	color: white;
+}
+
+.link {
+	text-decoration: inherit;
+	color: white;
+}
+
+.center {
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 1100px;
+}
+
+.horizontalline {
+	width: 800px;
+	height: 2px;
+	background-color: grey;
+}
+
+/* Sticky social bar */
+.icon-bar {
+  position: fixed;
+  top: 35.9%;
+  left: 96.5%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: #C0C0C0;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+	color: white;
+}
+
+.facebook {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+.twitter {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+.instagram {
+   background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+.snapchat {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.youtube {
+   background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+

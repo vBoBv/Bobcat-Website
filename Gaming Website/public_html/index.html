@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bobcats</title>
+  <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:700" rel="stylesheet">
+<!-- Font Link: https://fonts.google.com/?sort=popularity&selection.family=Rajdhani:700 -->
+</head>
+<body>
+
+<script>
+	alert("For full perfomance please follow this step: Open in Microsoft Edge, Zoom the page to 135%, Connect to the internet")
+</script>
+
+<!-- Header -->
+
+<!-- Horizontal Navigation Link: http://css-snippets.com/simple-horizontal-navigation/ -->
+<div class="nav">
+      <ul>
+		<div class="logoborder">
+			
+		</div>
+		<div class="logo">
+			<li><a href="index.html">BOBCATS</a></li>
+		</div>
+		<div class="navfont">
+			<li class="home"><a href="index.html">Home</a></li>
+			<li class="tutorials"><a href="news.html">News</a></li>
+			<li class="about"><a href="forum.html">Forum</a></li>
+			<li class="news"><a href="theteam.html">Teams</a></li>
+			<li class="contact"><a href="sponsorships.html">Sponsorships</a></li>
+			<li class="contact"><a href="games.html">Games</a></li>
+			<li class="contact"><a href="login.html">Login</a></li>
+			<li class="joinus"><a href="joinus.html">Join Us</a></li>
+		<div>
+      </ul>
+</div>
+
+</script>
+
+<!-- Search Bar -->
+
+<div class="search">
+	<form style="margin:auto; max-width:300px">
+		<span class="search1" style="font-size:30px; cursor:pointer" onclick="openNav()"><i class="fa fa-search"></i></span>
+	</form>
+</div>
+
+<!-- Off-canvas Menu -->
+
+<!-- Off-canvas Menu Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push -->
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <input class="search3" type="text" placeholder="Search.." name="search2">
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<!-- Section2 -->
+
+<!-- Slideshow Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+<!-- Image Overlay Title Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title -->
+
+<div class="section2">
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+				<div class="textimage">
+					<img class="image" src="images/tsm.jpg" style="width:100%">
+						<div class="overlay">
+						<p><strong>The Dream Has Ended.</strong><br><br>
+						Over the half-decade, Bobcats has never missed a North American finals. It has been three years since another team, Cloud9, was able to knocked Team Liquid out in 
+						the finals and become NA LCS Champions and five years since TSM managed the same feat. Surprisingly, for the first time in NA LCS history, Our team will not be in the finals, 
+						but none of the other champions will either.
+						</p>
+						</div>
+				</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+				<div class="textimage">
+					<img src="images/PUBGTICGN.jpg" style="width:100%">
+						<div class="overlay">
+						<p><strong>Season 1 Competition.</strong><br><br>
+						Today PUBG cooperation is proud to announce PUBG Global Invitational 2018 (PGI 2018), an esports tournament where 20 top professional PUBG teams from all over the world will compete for a 
+						total of US $2 million in prizes and the ultimate PUBG bragging rights. Bobcats team which represents New Zealand will take part in this tournament. It will take place 
+						in Berlin, Germany from July 25 through July 29. 
+						</p>
+						</div>
+				</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+				<div class="textimage">
+					<img src="images/SKT.png" style="width:100%">
+						<div class="overlay">
+						<p><strong>New Skins</strong><br><br>
+						The new set of SKT T1(aka Bobcats) Worlds skins are now available! All of the skins have updated particles, models, sound effects and visual effects plus 
+						their unique recalls. These skins were also designed to reflect our team members characteristic. It costs 800 RP for each skin and 3800 RP for the whole set. 
+						</p>
+						</div>
+				</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+
+<div class="box1">
+
+</div>
+
+<!-- Section3 -->
+
+
+<div id="title">
+	<h3>Most Popular Game</h3>
+</div>
+
+
+<div class="fortniteline1">
+	<p></p>
+</div>
+
+<div class="fortniteline2">
+	<p></p>
+</div>
+
+<div class="fortniteline3">
+	<p></p>
+</div>
+
+<div class="section3">
+	
+	<img class="fortnite" src="images/fortnite.jpg" alt="Fortnite">
+</div>
+
+<div class="content3">
+	<h1><button class="button1"><span>Fortnite </span></button></h1> <!-- Animated Button Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1 -->
+	<p style="text-align:center">New to Fortnite? Want to become a pro as fast as possible? Watch our tutorials on demolishing the rifts. You will learn about places to get good loots and improving your 
+	aiming and shooting skills.</p>
+</div>
+
+
+<!-- Section4 -->
+
+<div id="title1">
+	<p>Most Watched Games</p>
+</div>
+
+<div class="titleline1">
+	<p></p>
+</div>
+
+<div class="titleline2">
+	<p></p>
+</div>
+
+<div class="titleline3">
+	<p></p>
+</div>
+
+<div class="titleline4">
+	<p></p>
+</div>
+
+<div class="titleline5">
+	<p></p>
+</div>
+
+
+<div class="section4">
+
+	<img class="leagueoflegends" src="images/lol1.jpg" alt="Fortnite">
+		<div class="content4">
+			<h1><button class="buttonlol"><span>League of Legends </span></button></h1>
+			<p style="text-align:center">Season 7 playoffs at 16 April. Team will play head-to-head with other teams from various regions. On the first day, we will clash with Liverpool in 
+			Group A. Let's the thrill begins.</p>
+			<br>
+			<p><button class="button2"><span>Read More </span></button></p> <!-- Animated Button Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1 -->
+		</div>
+		
+	
+</div>
+
+
+<!-- Section5 -->
+
+<div class="section5">
+
+	<img class="csgo" src="images/csgo.png" alt="CS:GO">
+		<div class="content5">
+			<h1><button class="buttoncs"><span>CS:GO </span></button></h1>
+			<p style="text-align:center">Tips and strategies for the new bomb maps. Cobblestone and Overpass were the most hardest maps to play with according to the statistic. This tutorial will explain 
+			how to plant the bomb with a good timing and using different strategies to bypass the maps.</p>
+			<br>
+			<p><button class="button3"><span>Read More </span></button></p> <!-- Animated Button Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1 -->
+		</div>
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+	<footer>
+		<div class="left">
+			<h4>BOBCATS.COM Limited</h4>
+			<p style="text-indent: 20px;">60/F, Twin Tower, Times Circle, 32 Queen Street, Mission Bay, New Zealand</p> 
+			<p style="text-indent: 20px;">Incorporation number: 26845901 Business registration number: 45486201</p>
+			<p><a class="link" href="">Site Map</a></p>
+			<p><a class="link" href="">Partners</a></p>
+			<p><a class="link" href="">Careers</a></p>
+				<div class="horizontalline">
+					<p></p>
+				</div>
+			<p>Use of this Web site means the user accept the <a href="" style="color:grey; text-decoration: none">Terms and Conditions</a> and <a href="" style="color:grey; text-decoration: none">Privacy policy<a>. All copyrights, trade marks,<br> service marks belong to the corresponding owners.
+			</p>	
+		</div>
+		
+		<div class="center" >
+			<h3>Partners:</h3>
+				<div>
+			<a href="https://ironsidecomputers.com/"><img style="position:absolute; top: 100px; left: -80px" width="250px"; height="250px"; class="mySlide w3-animate-fading" src="images/ironside.png" alt="Ironside"></a>
+			<a href="https://www.razer.com/"><img style="position:absolute; top: 100px; left: -80px" width="250px"; height="250px"; class="mySlide w3-animate-fading" class="sponsor2" src="images/razer.png" alt="Razer"></a>
+			<a href="https://www.coca-colacompany.com/"><img style="position:absolute; top: 100px; left: -180px;" width="400px"; height="200px"; class="mySlide w3-animate-fading" class="sponsor3" src="images/cocacola.png" alt="Cocacola"></a>
+				</div>
+		</div>
+		
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlide");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000);    
+}
+</script>
+		
+	</footer>
+</div>
+
+
+<!-- Sticky social media bar -->
+
+<!-- Sticky Social Bar Link: https://dcrazed.net/html-css3-social-media-buttons/ -->
+
+<div class="icon-bar">
+
+	<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+	<a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+	<a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+	<a href="#" class="instagram"><i class="fa fa-instagram"></i></a> 
+	<a href="#" class="snapchat"><i class="fa fa-snapchat-ghost"></i></a>
+   
+</div>
+
+</body>
+</html>

@@ -1,0 +1,696 @@
+body {
+  margin: 0;
+  padding: 0;
+ font-family: 'Rajdhani', sans-serif;
+}
+
+.nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+/* Header */
+
+.logo {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	
+}
+
+.logoborder	{
+	border: 5px solid white;
+	width: 160px;
+	height: 40px;
+	position: absolute;
+	top: 18px;
+	left: 24px;
+}
+
+.navfont {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 15px;
+}
+ 
+.nav ul{
+	position: relative;
+  list-style: none;
+  background-color: black;
+  opacity: 0.8;
+  text-align: center;
+  padding: 15px 0 20px 0;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #C0C0C0;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  color: white;
+}
+ 
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+.nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+ /* Search Button */
+ 
+.search {
+	position: fixed;
+	top: 25px;
+	left: 1370px;
+	z-index: 100;
+}
+
+.search1 {
+	background-color: inherit; 
+	border: none; 
+	color: #C0C0C0;
+	cursor: pointer;
+}
+
+.search1:hover {
+	color: white;
+}
+
+.search3 {
+	background-color: inherit;
+	border: none;
+	font-size: 40px;
+	
+}
+
+/* Off-canvas Menu */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+	z-index: 300;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* Section2 */
+	
+.section2 {
+	width: 100%;
+	background-color: black;
+	height: 800px;
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+}
+
+/* Sticky social bar */
+.icon-bar {
+  position: fixed;
+  top: 32.9%;
+  left: 96.5%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: #C0C0C0;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+	color: white;
+}
+
+.facebook {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+.twitter {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+.instagram {
+   background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+.snapchat {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.youtube {
+   background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+/* Fortnite */
+
+.fortnite {
+	border-radius: 3px;
+  border: none;
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding: 0;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 130px;
+  left: 20px;
+}
+
+.fortnite:hover {
+	opacity:0.8;
+}
+
+.teamname {
+	width: 300px;
+	height: 80px;
+	position: absolute;
+	top: 170px;
+	left: 840px;
+	background-color: grey;
+	opacity: 1;
+	color: white;
+	text-align: center;
+	z-index: 1;
+}
+
+.portrait1 {
+	width: 250px;
+	height: 200px;
+	box-shadoww: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	
+}
+
+.yellowstar {
+	position: absolute;
+	top: 230px;
+	left: 60px;
+}
+
+.contentyellowstar {
+	height: 230px;
+	width: 800px;
+	position:absolute;
+	top: 0;
+	left: 250px;
+	background-color: #000033;
+	opacity: 0.8;
+	color: #66a266;
+	text-align: center;
+}
+
+.bjergsen {
+	position: absolute;
+	top: 460px;
+	left: 1110px;
+}
+
+.contentbjergsen {
+	height: 230px;
+	width: 800px;
+	position:absolute;
+	top: 0;
+	left: -800px;
+	background-color: #000033;
+	opacity: 0.5;
+	color: #66a266;
+	text-align: center;
+}
+
+.faker {
+	position: absolute;
+	top: 689px;
+	left: 60px;
+}
+
+.contentfaker {
+	height: 230px;
+	width: 800px;
+	position:absolute;
+	top: 0;
+	left: 250px;
+	background-color: #000033;
+	opacity: 0.8;
+	color: #66a266;
+	text-align: center;
+}
+
+.doublelift {
+	position: absolute;
+	top: 918px;
+	left: 1110px;
+}
+
+.contentdoublelift {
+	height: 230px;
+	width: 800px;
+	position:absolute;
+	top: 0;
+	left: -800px;
+	background-color: #000033;
+	opacity: 0.5;
+	color: #66a266;
+	text-align: center;
+}
+
+.aphromo {
+	position: absolute;
+	top: 1147px;
+	left: 60px;
+}
+
+.contentaphromo {
+	height: 230px;
+	width: 800px;
+	position:absolute;
+	top: 0;
+	left: 250px;
+	background-color: #000033;
+	opacity: 0.8;
+	color: #66a266;
+	text-align: center;
+}
+
+/* League of Legends */
+
+.lol {
+	border-radius: 3px;
+  border: none;
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding: 0;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 1500px;
+  left: 20px;
+}
+
+.lol:hover {
+	opacity:0.8; 
+}
+
+.teamname1 {
+	width: 300px;
+	height: 80px;
+	position: absolute;
+	top: 1500px;
+	left: 200px;
+	background-color: grey;
+	opacity: 1;
+	color: white;
+	text-align: center;
+	z-index: -1;
+}
+
+.cha1 {
+	position: absolute;
+	top: 1600px;
+	left: 329px;
+}
+
+.contentcha1 {
+	height: 300px;
+	width: 250px;
+	position:absolute;
+	top: 200px;
+	left: 0;
+	background-color: #000033;
+	opacity: 0.8;
+	color: #66a266;
+	text-align: center;
+}
+
+.cha2 {
+	position: absolute;
+	top: 1850px;
+	left: 578px;
+}
+
+.contentcha2 {
+	height: 300px;
+	width: 250px;
+	position:absolute;
+	top: 200px;
+	left: 0;
+	background-color: #000033;
+	opacity: 0.5;
+	color: #66a266;
+	text-align: center;
+}
+
+.cha3 {
+	position: absolute;
+	top: 1600px;
+	left: 827px;
+}
+
+.contentcha3 {
+	height: 300px;
+	width: 250px;
+	position:absolute;
+	top: 200px;
+	left: 0;
+	background-color: #000033;
+	opacity: 0.8;
+	color: #66a266;
+	text-align: center;
+}
+
+.cha4 {
+	position: absolute;
+	top: 1900px;
+	left: 80px;
+}
+
+.contentcha4 {
+	height: 300px;
+	width: 250px;
+	position:absolute;
+	top: 200px;
+	left: 0;
+	background-color: #000033;
+	opacity: 0.5;
+	color: #66a266;
+	text-align: center;
+}
+
+.cha5 {
+	position: absolute;
+	top: 1900px;
+	left: 1077px;
+}
+
+.contentcha5 {
+	height: 300px;
+	width: 250px;
+	position:absolute;
+	top: 200px;
+	left: 0;
+	background-color: #000033;
+	opacity: 0.5;
+	color: #66a266;
+	text-align: center;
+}
+
+/* CS:GO */
+
+.csgo {
+	border-radius: 3px;
+  border: none;
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding: 0;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 2500px;
+  left: 20px;
+}
+
+.csgo:hover {
+	opacity: 0.8;
+}
+
+.teamname2 {
+	width: 300px;
+	height: 80px;
+	position: absolute;
+	top: 2488px;
+	left: 200px;
+	background-color: grey;
+	opacity: 1;
+	color: white;
+	text-align: center;
+	z-index: -1;
+}
+
+.portrait1 {
+	width: 250px;
+	height: 200px;
+	box-shadoww: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	
+}
+
+.char1 {
+	position: absolute;
+	top: 2600px;
+	left: 465px;
+}
+
+.contentchar1 {
+	height: 250px;
+	width: 600px;
+	position:absolute;
+	top: 0;
+	left: 250px;
+	background-color: #000033;
+	opacity: 0.8;
+	color: #66a266;
+	text-align: center;
+}
+
+.char2 {
+	position: absolute;
+	top: 2850px;
+	left: 715px;
+}
+
+.contentchar2 {
+	height: 250px;
+	width: 600px;
+	position:absolute;
+	top: 0;
+	left: -600px;
+	background-color: #000033;
+	opacity: 0.5;
+	color: #66a266;
+	text-align: center;
+}
+
+.char3 {
+	position: absolute;
+	top: 3100px;
+	left: 465px;
+}
+
+.contentchar3 {
+	height: 250px;
+	width: 600px;
+	position:absolute;
+	top: 0;
+	left: 250px;
+	background-color: #000033;
+	opacity: 0.8;
+	color: #66a266;
+	text-align: center;
+}
+
+.char4 {
+	position: absolute;
+	top: 3350px;
+	left: 715px;
+}
+
+.contentchar4 {
+	height: 250px;
+	width: 600px;
+	position:absolute;
+	top: 0;
+	left: -600px;
+	background-color: #000033;
+	opacity: 0.5;
+	color: #66a266;
+	text-align: center;
+}
+
+.char5 {
+	position: absolute;
+	top: 3600px;
+	left: 465px;
+}
+
+.contentchar5 {
+	height: 250px;
+	width: 600px;
+	position:absolute;
+	top: 0;
+	left: 250px;
+	background-color: #000033;
+	opacity: 0.8;
+	color: #66a266;
+	text-align: center;
+}
+
+.youtube1 {
+	color: #C0C0C0;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.youtube1:hover {
+	color: white;
+}
+
+.facebook1 {
+	color: #C0C0C0;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.facebook1:hover {
+	color: white;
+}
+
+.instagram1 {
+	color: #C0C0C0;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.instagram1:hover {
+	color: white;
+}
+
+.snapchat1 {
+	color: #C0C0C0;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.snapchat1:hover {
+	color: white;
+}
+
+/* Footer */
+
+.footer1 {
+	width: 100%;
+	background-color: black;
+	opacity: 0.8;
+	position: absolute;
+	top: 3900px;
+	height: 400px;
+	
+}
+
+.left {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	text-align: justify;
+	color: white;
+}
+
+.link {
+	text-decoration: inherit;
+	color: white;
+}
+
+.center {
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 1100px;
+}
+
+.horizontalline {
+	width: 800px;
+	height: 2px;
+	background-color: grey;
+}
+
+.name {
+	background-color: #cccce5;
+}
+
+.name1 {
+	background-color: #323299;
+}
